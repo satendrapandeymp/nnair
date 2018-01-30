@@ -1,6 +1,5 @@
 import os
 
-
 if not os.path.exists('Output'):
     os.mkdir('Output')
 
@@ -8,23 +7,23 @@ f = open('Sample.in', 'r')
 text = f.read()
 f.close
 
-check = 'dOH = '
+#check = 'dOH = '
+check = 'tOH = '
 
 before = text.split(check)[0] + check
 after = text.split(check)[1]
 
-print before
-
 for i in range(20):
     b = .84 + (i/100.0)
+    #b = 105.1 + (i/100.0)
     print b
-    name = "Output/" + str(b) + '.in' 
+    name = "Output/" + str(b) + '.in'
     f = open(name , 'w')
-    
+
     f.write(before)
     f.write(str(b))
     f.write(after[3:])
-    
+
     f.close()
 
 os.system('./test.sh')
