@@ -12,6 +12,6 @@ plot 'cat.csv' us 1:3 with lines; pause 1
 #
 set title "energy"
 unset key
-plot 'cat.csv' us 1:6 with lines; pause -1
+plot 'cat.csv' us 1:4 with lines; pause -1
 #
 unset multiplot

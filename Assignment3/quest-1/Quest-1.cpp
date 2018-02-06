@@ -13,7 +13,7 @@ int main()
     srand(time(NULL));
 
     // since the program is in 1D so I'm only taking x component
-    float delta_time, total_time;
+    float delta_time, total_time, cons;
     float k, potential, kinetic, total_energy;
     float x, v, a, m, force, r;
     int i;
@@ -27,17 +27,17 @@ int main()
     v = 0;
     m = 10000.0;
     total_time = 0;
+    cons = .001;
 
     // Updating pos with time
-    for (i =0; i <100000; i++)
+    for (i =0; i <40000; i++)
     {
         // Getting a random number
         float random =  static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-        float random1 = 2 * static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 
         // Usual process
         total_time = total_time + delta_time;
-        force = -1 * k * x - random * v * m/100.0 + (random1 - .5)/100.0 ;
+        force = -1 * k * x - (cons * v * m + (random )) ;
         a = force/m;
         update(a, delta_time, &v, &x);
         potential = .5 * k * x *x ;
