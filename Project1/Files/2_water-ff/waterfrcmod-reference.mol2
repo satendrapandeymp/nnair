@@ -1,0 +1,22 @@
+remark goes here
+MASS
+O.3 16.000         0.330               ATTN, need revision
+H  1.008         0.161               same as hn 
+
+BOND
+O.3-H   500.00   0.9500       ATTN, need revision
+
+ANGLE
+H -O.3-H    100.000      104.000   ATTN, need revision
+
+DIHE
+
+IMPROPER
+
+NONBON
+  O.3          1.79260  0.0980             ATTN, need revision
+  H            0.0000    0.000
+
+
+
+

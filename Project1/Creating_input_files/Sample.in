@@ -1,0 +1,13 @@
+%chk=h2o
+# HF/6-31G* 
+
+H2O 6-311++G
+
+0 1
+o
+h   1 dOH     
+h   1 dOH         2 tOH      
+
+
+dOH = 0.9473
+tOH = 105.4974

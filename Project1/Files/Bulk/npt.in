@@ -1,0 +1,18 @@
+step-6_no_restraint_nvt 
+ &cntrl
+  imin   = 0,
+  irest  = 0,
+  ntx    = 1,
+  ntb    = 2, pres0 = 1.0, ntp = 1,
+  taup   = 2.0, 
+  ntc    = 1,
+  ntf    = 1,
+  cut    = 10,
+  ntr    = 0,
+  tempi  = 300.0,
+  temp0  = 300.0,
+  ntt    = 1,
+  tautp = 1.0,
+  nstlim = 100000, dt = 0.001
+  ntpr = 100, ntwx =100, ntwr =100
+ /

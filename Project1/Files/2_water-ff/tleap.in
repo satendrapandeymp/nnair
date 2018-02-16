@@ -1,0 +1,5 @@
+loadamberparams water.frcmod
+wat = loadmol2 water.mol2
+saveamberparm wat water.prmtop water.inpcrd
+savepdb wat wat.pdb
+quit

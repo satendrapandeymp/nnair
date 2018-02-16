@@ -1,0 +1,8 @@
+loadamberparams water.frcmod
+loadoff water.lib
+y = loadmol2 water.mol2
+set y box {25, 25, 25}
+solvatebox y x 3
+saveamberparm y waterbox.prmtop waterbox.inpcrd
+savepdb y waterbox.pdb
+quit

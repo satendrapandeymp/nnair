@@ -1,0 +1,4 @@
+loadamberparams water.frcmod
+x = loadmol2 water.mol2
+saveoff x water.lib
+quit
