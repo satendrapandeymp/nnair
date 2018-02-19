@@ -1,0 +1,5 @@
+source oldff/leaprc.ff99SB
+aladi = sequence {ACE ALA NME}
+saveamberparm aladi aladi.prmtop aladi.inpcrd
+savepdb aladi aladi.pdb
+quit

@@ -1,0 +1,9 @@
+Test run 1
+ &cntrl
+  imin = 1,
+  ncyc = 2500,
+  maxcyc = 5000,
+  cut = 15,
+  ntb = 0,
+  igb = 0,
+ &end

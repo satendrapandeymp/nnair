@@ -1,0 +1,5 @@
+source oldff/leaprc.ff99SB
+wat = loadpdb water.pdb
+saveamberparm wat water.prmtop water.inpcrd
+savepdb wat wat.pdb
+quit
